@@ -33,7 +33,7 @@ const RoomType = () => {
         <h4>Browse The Range</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <div className="roomtype" style={{ display: "flex", gap: "20px" }}>
+      <div className="roomtype">
         {rooms.map((room) => (
           <RoomItem key={room.id} room={room} />
         ))}
