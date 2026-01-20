@@ -2,6 +2,8 @@
   span {
     font-size: $h6;
     color: $text-light;
+    display: inline-block;
+    margin-bottom: 2.5em;
   }
   ul {
     margin: 0;
@@ -14,17 +16,63 @@
   .footer-top {
     display: flex;
     flex-direction: row;
+    margin-top: 4em;
+    margin-bottom: 2.5em;
 
     .footer-brand {
       h5 {
         font-size: $h5;
+        padding-bottom: 1em;
         margin: 0;
       }
       p {
         width: 90%;
         line-height: 1.8;
         color: $text-light;
+        margin: 0;
       }
     }
+
+    .footer-section {
+      margin: 0 4em;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        li {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .footer-newsletter {
+      .subscribe-form {
+        input {
+          border: none;
+          outline: none;
+          border-bottom: 1px solid $text-light;
+          padding-bottom: 0.4em;
+        }
+        button {
+          border: none;
+          outline: none;
+          border-bottom: 1px solid $text-light;
+          padding-bottom: 0.4em;
+          margin: 0 1em;
+          background: white;
+          padding: 0.4em;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 2em 0;
+    border-top: 1px solid $text-light;
   }
 }

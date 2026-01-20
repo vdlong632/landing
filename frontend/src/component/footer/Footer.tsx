@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const links = ["Home", "Shop", "About", "Contact"];
+  const links = ["Home", "Shop", "About", "Contact", "Blog"];
   const help = ["Payment Options", "Returns", "Privacy Policies"];
 
   return (
