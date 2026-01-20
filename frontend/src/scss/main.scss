@@ -1,0 +1,16 @@
+@import "./global.scss";
+@import "./variable";
+
+//component
+@import "../component/header/Header.scss";
+@import "../component/footer/Footer.scss";
+@import "../component/products/item/ProductItem.scss";
+
+//header
+@import "../component/header/component/actions/HeaderActions.scss";
+@import "../component/header/component/navigation/Navigation.scss";
+@import "../component//header/component/logo/Logo.scss";
+
+//home
+@import "../pages/home/component/banner/maskbanner/MaskBanner.scss";
+@import "../pages/home/component/roomtype/RoomType.scss"
