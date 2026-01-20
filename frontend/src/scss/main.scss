@@ -10,7 +10,13 @@
 @import "../component/header/component/actions/HeaderActions.scss";
 @import "../component/header/component/navigation/Navigation.scss";
 @import "../component//header/component/logo/Logo.scss";
+@import "../component/header/component/actions/child/ListCart.scss";
 
 //home
 @import "../pages/home/component/banner/maskbanner/MaskBanner.scss";
-@import "../pages/home/component/roomtype/RoomType.scss"
+@import "../pages/home/component/roomtype/RoomType.scss";
+@import "../pages/home/component/roomtype/item/RoomItem.scss";
+@import "../pages/home/component/banner/Banner.scss";
+@import "../pages/home/component/inspiration/Inspiration.scss";
+@import "../pages/home/component/inspiration/component/InspirationContent.scss";
+@import "../pages/home/component/inspiration/component/Sample.scss";

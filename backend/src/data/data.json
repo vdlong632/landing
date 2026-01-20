@@ -1,0 +1,621 @@
+{
+  "products": [
+    {
+      "id": "ASG-001",
+      "sku": "SS001",
+      "name": "Asgaard Sofa",
+      "slug": "asgaard-sofa",
+      "brand": "Asgaard",
+      "price": 250000.00,
+      "currency": "Rs.",
+      "currencySymbol": "₹",
+      "originalPrice": 275000.00,
+      "discount": 9,
+      "category": "Sofa",
+      "subCategory": "Sectional Sofa",
+      "description": "Premium quality Asgaard sofa with elegant design and superior comfort.",
+      "detailedDescription": "Setting the bar as one of the best sofas in its class, the Asgaard is a compact, stout-hearted hero with well-balanced comfort which boasts luxurious seating and extended support for relaxation.",
+      "salesPackage": "1 sectional sofa",
+      "modelNumber": "TFCBLGRBL6SRHS",
+      "secondaryMaterial": "Solid Wood",
+      "configuration": "L-shaped",
+      "upholsteryMaterial": "Fabric + Cotton",
+      "upholsteryColor": "Bright Grey & Lion",
+      "fillingMaterial": "Foam",
+      "finishType": "Bright Grey & Lion",
+      "adjustableHeadrest": false,
+      "maximumLoadCapacity": "280 KG",
+      "origin": "India",
+      
+      "dimensions": {
+        "width": "265.32 cm",
+        "height": "76 cm",
+        "depth": "167.76 cm",
+        "weight": "45 KG",
+        "seatHeight": "41.52 cm",
+        "legHeight": "5.46 cm"
+      },
+      
+      "seatingConfiguration": {
+        "type": "Sectional",
+        "components": "1 Three Seater, 2 Single Seater",
+        "seaterModel": "DTUBLIGRBL56B"
+      },
+      
+      "sizes": [
+        {
+          "code": "L",
+          "name": "Large",
+          "dimensions": "265x76x168 cm",
+          "price": 250000.00,
+          "isDefault": true
+        },
+        {
+          "code": "XL",
+          "name": "Extra Large",
+          "dimensions": "300x76x180 cm",
+          "price": 280000.00
+        },
+        {
+          "code": "XS",
+          "name": "Extra Small",
+          "dimensions": "220x76x150 cm",
+          "price": 220000.00
+        }
+      ],
+      
+      "colors": [
+        {
+          "code": "#3498DB",
+          "name": "Blue",
+          "image": "/images/colors/asgaard-blue.jpg",
+          "isAvailable": true
+        },
+        {
+          "code": "#F1C40F",
+          "name": "Yellow",
+          "image": "/images/colors/asgaard-yellow.jpg",
+          "isAvailable": true
+        },
+        {
+          "code": "#95A5A6",
+          "name": "Bright Grey",
+          "image": "/images/colors/bright-grey.jpg",
+          "isAvailable": true
+        },
+        {
+          "code": "#D35400",
+          "name": "Lion",
+          "image": "/images/colors/lion.jpg",
+          "isAvailable": true
+        }
+      ],
+      
+      "images": [
+        {
+          "url": "/images/products/asgaard-sofa-1.jpg",
+          "alt": "Asgaard Sofa Front View",
+          "type": "main"
+        },
+        {
+          "url": "/images/products/asgaard-sofa-2.jpg",
+          "alt": "Asgaard Sofa Side View",
+          "type": "side"
+        },
+        {
+          "url": "/images/products/asgaard-sofa-3.jpg",
+          "alt": "Asgaard Sofa in Living Room",
+          "type": "lifestyle"
+        },
+        {
+          "url": "/images/products/asgaard-sofa-4.jpg",
+          "alt": "Asgaard Sofa Close Up",
+          "type": "detail"
+        }
+      ],
+      
+      "thumbnail": "/images/products/asgaard-sofa-thumb.jpg",
+      "video": "/videos/asgaard-sofa-demo.mp4",
+      
+      "rating": 4.7,
+      "totalReviews": 204,
+      "reviewBreakdown": {
+        "5": 150,
+        "4": 40,
+        "3": 10,
+        "2": 3,
+        "1": 1
+      },
+      
+      "stock": {
+        "total": 15,
+        "available": 12,
+        "reserved": 3,
+        "lowStockThreshold": 5,
+        "isInStock": true,
+        "backorderAllowed": true
+      },
+      
+      "shipping": {
+        "weight": "45 KG",
+        "dimensions": "265x76x167 cm",
+        "assemblyRequired": true,
+        "estimatedAssemblyTime": "60-90 minutes",
+        "freeShipping": true,
+        "shippingTime": "7-10 business days"
+      },
+      
+      "warranty": {
+        "period": "3 years",
+        "type": "Manufacturer Warranty",
+        "coverage": "Frame and Fabric"
+      },
+      
+      "tags": ["Sofa", "Chair", "Home", "Shop", "Living Room", "Sectional", "L-shaped"],
+      
+      "relatedProducts": ["OUT-001", "ASG-002", "CHA-001"],
+      "similarProducts": ["SEC-001", "MOD-001", "LUX-001"],
+      
+      "features": [
+        "Premium fabric upholstery",
+        "Solid wood frame construction",
+        "High-density foam filling",
+        "L-shaped sectional design",
+        "Easy to clean fabric",
+        "Sturdy and durable"
+      ],
+      
+      "specifications": {
+        "style": "Modern Contemporary",
+        "theme": "Mid-century Modern",
+        "roomType": ["Living Room", "Family Room"],
+        "seatFillingMaterial": "Polyurethane Foam",
+        "frameMaterial": "Solid Sheesham Wood",
+        "legMaterial": "Solid Wood",
+        "cushionFilling": "Polyester Fiber",
+        "specialFeatures": "Reversible Cushions"
+      },
+      
+      "careInstructions": [
+        "Dry clean only",
+        "Avoid direct sunlight",
+        "Use mild detergent for stains",
+        "Rotate cushions regularly",
+        "Vacuum weekly"
+      ],
+      
+      "createdAt": "2024-03-15T10:00:00Z",
+      "updatedAt": "2024-10-25T14:30:00Z",
+      
+      "seo": {
+        "title": "Asgaard Sofa - Premium Sectional Sofa | Furniture Store",
+        "description": "Buy Asgaard Sofa - Premium L-shaped sectional sofa with fabric upholstery. 3-year warranty. 4.7★ rating. Free shipping.",
+        "keywords": ["asgaard sofa", "sectional sofa", "L-shaped sofa", "living room furniture"]
+      },
+      
+      "metadata": {
+        "isNew": false,
+        "isFeatured": true,
+        "isBestSeller": true,
+        "isOnSale": true,
+        "isTrending": false
+      }
+    },
+    
+    {
+      "id": "OUT-001",
+      "sku": "OS002",
+      "name": "Outdoor Sofa Set",
+      "slug": "outdoor-sofa-set",
+      "brand": "Outdoor Living",
+      "price": 224000.00,
+      "currency": "Rs.",
+      "currencySymbol": "₹",
+      "originalPrice": 250000.00,
+      "discount": 10,
+      "category": "Sofa Set",
+      "subCategory": "Outdoor Furniture",
+      "description": "Complete outdoor sofa set perfect for garden and patio.",
+      "detailedDescription": "Durable and weather-resistant outdoor sofa set designed for comfort and longevity in outdoor spaces.",
+      
+      "salesPackage": "1 Three Seater Sofa, 2 Single Seaters, 1 Coffee Table",
+      "configuration": "3-piece set",
+      "material": "Weather-resistant Wicker",
+      "upholsteryMaterial": "Outdoor Fabric",
+      "fillingMaterial": "Quick-dry Foam",
+      
+      "dimensions": {
+        "sofaWidth": "180 cm",
+        "sofaHeight": "85 cm",
+        "sofaDepth": "90 cm",
+        "chairWidth": "70 cm",
+        "chairHeight": "85 cm",
+        "chairDepth": "90 cm",
+        "tableDimensions": "100x50x45 cm"
+      },
+      
+      "seatingConfiguration": {
+        "type": "Set",
+        "components": "1 Three Seater, 2 Single Seaters",
+        "additional": "1 Coffee Table"
+      },
+      
+      "colors": [
+        {
+          "code": "#2C3E50",
+          "name": "Dark Grey",
+          "image": "/images/colors/outdoor-dark-grey.jpg",
+          "isAvailable": true
+        },
+        {
+          "code": "#7F8C8D",
+          "name": "Stone Grey",
+          "image": "/images/colors/stone-grey.jpg",
+          "isAvailable": true
+        },
+        {
+          "code": "#16A085",
+          "name": "Forest Green",
+          "image": "/images/colors/forest-green.jpg",
+          "isAvailable": true
+        }
+      ],
+      
+      "sizes": [
+        {
+          "code": "REG",
+          "name": "Regular Set",
+          "description": "3-piece sofa set",
+          "price": 224000.00,
+          "isDefault": true
+        },
+        {
+          "code": "EXT",
+          "name": "Extended Set",
+          "description": "3-piece sofa + 2 lounge chairs",
+          "price": 320000.00
+        }
+      ],
+      
+      "images": [
+        {
+          "url": "/images/products/outdoor-set-1.jpg",
+          "alt": "Outdoor Sofa Set Complete",
+          "type": "main"
+        },
+        {
+          "url": "/images/products/outdoor-set-2.jpg",
+          "alt": "Outdoor Sofa in Garden",
+          "type": "lifestyle"
+        }
+      ],
+      
+      "rating": 4.2,
+      "totalReviews": 145,
+      "reviewBreakdown": {
+        "5": 80,
+        "4": 45,
+        "3": 15,
+        "2": 3,
+        "1": 2
+      },
+      
+      "stock": {
+        "total": 8,
+        "available": 6,
+        "reserved": 2,
+        "lowStockThreshold": 3,
+        "isInStock": true,
+        "backorderAllowed": false
+      },
+      
+      "shipping": {
+        "weight": "120 KG",
+        "dimensions": "Multiple boxes",
+        "assemblyRequired": true,
+        "estimatedAssemblyTime": "120 minutes",
+        "freeShipping": false,
+        "shippingCost": 5000.00,
+        "shippingTime": "10-14 business days"
+      },
+      
+      "warranty": {
+        "period": "2 years",
+        "type": "Weather Warranty",
+        "coverage": "Frame and Fabric against weather damage"
+      },
+      
+      "tags": ["Outdoor", "Garden", "Patio", "Sofa Set", "Weather Resistant"],
+      
+      "features": [
+        "Weather-resistant wicker construction",
+        "UV-protected fabric",
+        "Water-resistant cushions",
+        "Rust-proof aluminum frame",
+        "Easy to clean",
+        "Modular design"
+      ],
+      
+      "specifications": {
+        "weatherResistance": "Yes",
+        "uvProtection": "Yes",
+        "waterResistance": "Water-resistant cushions",
+        "frameMaterial": "Powder-coated Aluminum",
+        "cushionMaterial": "Quick-dry Foam",
+        "maintenance": "Low maintenance"
+      },
+      
+      "createdAt": "2024-04-10T09:00:00Z",
+      "updatedAt": "2024-10-20T11:00:00Z",
+      
+      "metadata": {
+        "isNew": true,
+        "isFeatured": true,
+        "isBestSeller": false,
+        "isOnSale": true,
+        "isTrending": true
+      }
+    }
+  ],
+  
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Sofas",
+      "slug": "sofas",
+      "description": "Comfortable sofas for your living space",
+      "productCount": 24,
+      "image": "/images/categories/sofas.jpg",
+      "subCategories": ["Sectional", "L-shaped", "3-seater", "2-seater", "Sofa Beds"]
+    },
+    {
+      "id": "cat-2",
+      "name": "Chairs",
+      "slug": "chairs",
+      "description": "Various chairs for different purposes",
+      "productCount": 36,
+      "image": "/images/categories/chairs.jpg",
+      "subCategories": ["Dining Chairs", "Office Chairs", "Accent Chairs", "Rocking Chairs"]
+    },
+    {
+      "id": "cat-3",
+      "name": "Outdoor Furniture",
+      "slug": "outdoor-furniture",
+      "description": "Durable furniture for outdoor spaces",
+      "productCount": 18,
+      "image": "/images/categories/outdoor.jpg",
+      "subCategories": ["Patio Sets", "Garden Furniture", "Outdoor Dining", "Sun Loungers"]
+    }
+  ],
+  
+  "comparison": {
+    "products": ["ASG-001", "OUT-001"],
+    "attributes": [
+      {
+        "name": "General",
+        "fields": [
+          {
+            "label": "Sales Package",
+            "values": {
+              "ASG-001": "1 sectional sofa",
+              "OUT-001": "1 Three Seater, 2 Single Seater"
+            }
+          },
+          {
+            "label": "Model Number",
+            "values": {
+              "ASG-001": "TFCBLGRBL6SRHS",
+              "OUT-001": "OS-3SET-2024"
+            }
+          },
+          {
+            "label": "Secondary Material",
+            "values": {
+              "ASG-001": "Solid Wood",
+              "OUT-001": "Aluminum Frame"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "fields": [
+          {
+            "label": "Filling Material",
+            "values": {
+              "ASG-001": "Foam",
+              "OUT-001": "Quick-dry Foam"
+            }
+          },
+          {
+            "label": "Maximum Load Capacity",
+            "values": {
+              "ASG-001": "280 KG",
+              "OUT-001": "300 KG"
+            }
+          },
+          {
+            "label": "Origin",
+            "values": {
+              "ASG-001": "India",
+              "OUT-001": "Vietnam"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dimensions",
+        "fields": [
+          {
+            "label": "Width",
+            "values": {
+              "ASG-001": "265.32 cm",
+              "OUT-001": "180 cm (sofa)"
+            }
+          },
+          {
+            "label": "Height",
+            "values": {
+              "ASG-001": "76 cm",
+              "OUT-001": "85 cm"
+            }
+          },
+          {
+            "label": "Depth",
+            "values": {
+              "ASG-001": "167.76 cm",
+              "OUT-001": "90 cm"
+            }
+          },
+          {
+            "label": "Weight",
+            "values": {
+              "ASG-001": "45 KG",
+              "OUT-001": "120 KG (total set)"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  
+  "filters": {
+    "categories": ["Sofas", "Chairs", "Tables", "Beds", "Storage", "Outdoor"],
+    "colors": [
+      { "name": "Blue", "code": "#3498DB", "count": 12 },
+      { "name": "Yellow", "code": "#F1C40F", "count": 8 },
+      { "name": "Grey", "code": "#95A5A6", "count": 24 },
+      { "name": "Brown", "code": "#8B4513", "count": 18 },
+      { "name": "Black", "code": "#2C3E50", "count": 15 },
+      { "name": "White", "code": "#ECF0F1", "count": 10 },
+      { "name": "Green", "code": "#27AE60", "count": 7 },
+      { "name": "Red", "code": "#E74C3C", "count": 5 }
+    ],
+    "sizes": [
+      { "name": "XS", "description": "Extra Small", "count": 6 },
+      { "name": "S", "description": "Small", "count": 12 },
+      { "name": "M", "description": "Medium", "count": 28 },
+      { "name": "L", "description": "Large", "count": 20 },
+      { "name": "XL", "description": "Extra Large", "count": 8 }
+    ],
+    "priceRanges": [
+      { "min": 0, "max": 50000, "label": "Under ₹50,000", "count": 25 },
+      { "min": 50000, "max": 100000, "label": "₹50,000 - ₹100,000", "count": 30 },
+      { "min": 100000, "max": 200000, "label": "₹100,000 - ₹200,000", "count": 20 },
+      { "min": 200000, "max": 500000, "label": "₹200,000 - ₹500,000", "count": 12 },
+      { "min": 500000, "max": 1000000, "label": "₹500,000+", "count": 5 }
+    ],
+    "materials": [
+      { "name": "Wood", "count": 45 },
+      { "name": "Fabric", "count": 38 },
+      { "name": "Leather", "count": 15 },
+      { "name": "Metal", "count": 22 },
+      { "name": "Rattan", "count": 8 },
+      { "name": "Velvet", "count": 12 }
+    ],
+    "styles": [
+      { "name": "Modern", "count": 35 },
+      { "name": "Contemporary", "count": 28 },
+      { "name": "Traditional", "count": 18 },
+      { "name": "Industrial", "count": 12 },
+      { "name": "Scandinavian", "count": 15 },
+      { "name": "Mid-century", "count": 10 }
+    ]
+  },
+  
+  "inventory": {
+    "ASG-001": {
+      "sku": "SS001",
+      "name": "Asgaard Sofa",
+      "variants": [
+        {
+          "id": "ASG-001-BLUE-L",
+          "color": "Blue",
+          "size": "L",
+          "stock": 8,
+          "reserved": 2,
+          "available": 6,
+          "price": 250000.00
+        },
+        {
+          "id": "ASG-001-BLUE-XL",
+          "color": "Blue",
+          "size": "XL",
+          "stock": 4,
+          "reserved": 1,
+          "available": 3,
+          "price": 280000.00
+        },
+        {
+          "id": "ASG-001-YELLOW-L",
+          "color": "Yellow",
+          "size": "L",
+          "stock": 5,
+          "reserved": 0,
+          "available": 5,
+          "price": 250000.00
+        },
+        {
+          "id": "ASG-001-GREY-L",
+          "color": "Bright Grey",
+          "size": "L",
+          "stock": 3,
+          "reserved": 0,
+          "available": 3,
+          "price": 250000.00
+        }
+      ],
+      "totalStock": 20,
+      "lowStockAlert": true,
+      "restockDate": "2024-11-15"
+    },
+    "OUT-001": {
+      "sku": "OS002",
+      "name": "Outdoor Sofa Set",
+      "variants": [
+        {
+          "id": "OUT-001-GREY-REG",
+          "color": "Dark Grey",
+          "size": "Regular Set",
+          "stock": 3,
+          "reserved": 1,
+          "available": 2,
+          "price": 224000.00
+        },
+        {
+          "id": "OUT-001-GREEN-REG",
+          "color": "Forest Green",
+          "size": "Regular Set",
+          "stock": 5,
+          "reserved": 1,
+          "available": 4,
+          "price": 224000.00
+        }
+      ],
+      "totalStock": 8,
+      "lowStockAlert": false,
+      "restockDate": "2024-11-10"
+    }
+  },
+  
+  "metadata": {
+    "currency": {
+      "code": "INR",
+      "symbol": "₹",
+      "name": "Indian Rupee"
+    },
+    "store": {
+      "name": "Furniture Landing",
+      "tagline": "Premium Furniture Store",
+      "contact": {
+        "phone": "+91 9876543210",
+        "email": "info@furniturelanding.com",
+        "address": "123 Furniture Street, Mumbai, India"
+      }
+    },
+    "socialSharing": {
+      "platforms": ["Facebook", "Twitter", "Pinterest", "WhatsApp"],
+      "hashtags": ["#FurnitureLanding", "#HomeDecor", "#FurnitureStore"]
+    }
+  }
+}

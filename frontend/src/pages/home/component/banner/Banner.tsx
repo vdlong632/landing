@@ -4,7 +4,7 @@ const Banner = () => {
     return(
         <div className="banner">
             <img src="mockupwall.png" alt="" />
-            {/* <MaskBanner/> */}
+            <MaskBanner/>
         </div>
     )
 }

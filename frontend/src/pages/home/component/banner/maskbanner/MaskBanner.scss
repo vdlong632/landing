@@ -1,6 +1,46 @@
 .maskbanner {
-    width: 47%;
-    height: 70%;
-    background: red;
-    z-index: 1;
+  width: 40%;
+  height: 60%;
+  background: $background-banner;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  right: 8.5%;
+  bottom: 17%;
+  display: flex;
+  justify-content: center;
+}
+.content {
+    width: 90%;
+    height: 75%;
+    margin-top: 3em;
+    box-sizing: border-box;
+    
+    span {
+        letter-spacing: 3px;
+        font-size: $h6;
+        font-weight: 500;
+        margin-bottom: 1em;
+    }
+
+    h1 {
+        font-size: $h1;
+        color: $text-banner;
+        margin: 0.3em 0;
+    }
+    p {
+        font-size: $body2;
+        margin: 1.5em 0;
+
+    }
+
+    button {
+        font-size: $h6;
+        font-weight: 650;
+        background: $text-banner;
+        width: 40%;
+        padding: 1.6em
+    }
+    
+    
 }

@@ -8,26 +8,26 @@ const Footer = () => {
     <footer className="container footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <h2>Funiro.</h2>
+          <h5>Funiro.</h5>
           <p>400 University Drive Suite 200 Coral Gables, <br/> FL 33134 USA</p>
         </div>
 
         <div className="footer-section">
-          <h4>Links</h4>
+          <span>Links</span>
           <ul>
-            {links.map(item => <Link to={item.toLowerCase()} key={item}>{item}</Link>)}
+            {links.map(item => <li><Link to={item.toLowerCase()} key={item}>{item}</Link></li>)}
           </ul>
         </div>
 
         <div className="footer-section">
-          <h4>Help</h4>
+          <span>Help</span>
           <ul>
             {help.map(item => <li key={item}>{item}</li>)}
           </ul>
         </div>
 
         <div className="footer-newsletter">
-          <h4>Newsletter</h4>
+          <span>Newsletter</span>
           <div className="subscribe-form">
             <input type="email" placeholder="Enter Your Email Address" />
             <button>SUBSCRIBE</button>

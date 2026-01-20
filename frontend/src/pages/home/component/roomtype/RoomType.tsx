@@ -28,10 +28,16 @@ const RoomType = () => {
   }, []);
 
   return (
-    <div className="roomtype" style={{ display: "flex", gap: "20px" }}>
-      {rooms.map((room) => (
-        <RoomItem key={room.id} room={room} />
-      ))}
+    <div className="container">
+      <div className="text">
+        <h4>Browse The Range</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div className="roomtype" style={{ display: "flex", gap: "20px" }}>
+        {rooms.map((room) => (
+          <RoomItem key={room.id} room={room} />
+        ))}
+      </div>
     </div>
   );
 };

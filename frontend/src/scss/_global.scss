@@ -2,13 +2,13 @@ html::-webkit-scrollbar {
   display: none;
 }
 body {
-    font-family: 'Ariel', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: white;
-    color: black;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 .container {
   max-width: 100%;
