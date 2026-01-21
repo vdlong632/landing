@@ -1,0 +1,10 @@
+.cart_actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    button {
+        border-radius: 50px;
+        padding: 0.5em 1.5em;
+        border: 1px solid gray
+    }
+}

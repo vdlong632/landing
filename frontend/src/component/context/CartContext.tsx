@@ -9,7 +9,6 @@ interface CartItem extends Product {
 interface CartContextType {
   cartItems: CartItem[];
   addToCart: (product: Product) => void;
-  // Bạn có thể thêm removeFromCart, clearCart ở đây
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);

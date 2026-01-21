@@ -1,6 +1,6 @@
 const CartSummary = () => {
     return(
-        <div className="cartsummary"></div>
+        <div className="cart_summary">summary</div>
     )
 }
 export default CartSummary

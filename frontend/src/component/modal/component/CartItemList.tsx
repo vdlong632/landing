@@ -19,7 +19,6 @@ const CartItemList = () => {
           </div>
         ))}
       </div>
-      {/* ... Footer Modal (Subtotal, Checkout btn) ... */}
     </div>
   );
 };

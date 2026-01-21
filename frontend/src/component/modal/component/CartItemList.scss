@@ -1,0 +1,24 @@
+.shopping-cart-modal {
+  max-height: 80vh; /* giới hạn chiều cao modal */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-items-list {
+  flex: 1;
+  overflow-y: auto;       /* cho phép cuộn dọc */
+  padding-right: 8px;     /* tránh che mất nội dung khi có scrollbar */
+  max-height: 60vh;       /* giới hạn chiều cao danh sách */
+  scroll-behavior: smooth;
+}
+
+/* Tuỳ chọn: tuỳ chỉnh thanh cuộn */
+.cart-items-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-items-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
