@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Cart from "./child/Cart";
 import Search from "./child/Search";
 import User from "./child/User";
 import WishList from "./child/WishList";
-import ListCart from "./child/ListCart";
+import CartModal from "../../../modal/CartModal";
+import CartIcon from "./child/CartIcon";
 
 const HeaderActions = () => {
   const [showCart, setShowCart] = useState<boolean>(false);
@@ -17,9 +17,9 @@ const HeaderActions = () => {
       <User />
       <Search />
       <WishList />
-      <Cart onClick={handleCartClick} />
+      <CartIcon onClick={handleCartClick} />
 
-      {showCart && <ListCart onClose={() => setShowCart(false)} />}
+      {showCart && <CartModal onClose={() => setShowCart(false)} />}
     </div>
   );
 };

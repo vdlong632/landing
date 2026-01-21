@@ -1,5 +1,48 @@
 [
   {
+    "id": 1,
+    "name": "Asgaard Premium Sofa",
+    "slug": "asgaard-premium-sofa",
+    "category": "living",
+    "price": 28500000,
+    "oldPrice": 32000000,
+    "discount": 11,
+    "rating": 4.7,
+    "reviewsCount": 127,
+    "isNew": false,
+    "isFeatured": true,
+    "stock": 45,
+    "material": "Premium Italian Leather",
+    "dimensions": "220x95x85 cm",
+    "weight": "85 kg",
+    "images": [
+      "/images/products/sample.png",
+      "/images/products/asgaard-2.jpg",
+      "/images/products/asgaard-3.jpg",
+      "/images/products/asgaard-4.jpg"
+    ],
+    "colors": [
+      { "name": "Dark Brown", "code": "#3E2723", "stock": 15 },
+      { "name": "Smoke Gray", "code": "#616161", "stock": 20 },
+      { "name": "Navy Blue", "code": "#0D47A1", "stock": 10 }
+    ],
+    "sizes": [
+      { "name": "Small (2-seater)", "code": "S", "priceAdjustment": -5000000 },
+      { "name": "Medium (3-seater)", "code": "M", "priceAdjustment": 0 },
+      { "name": "Large (4-seater)", "code": "L", "priceAdjustment": 8000000 }
+    ],
+    "description": "Premium leather sofa imported from Italy, minimalist design with elegant lines. Sturdy oak wood frame, comfortable memory foam cushions, chrome-plated metal legs.",
+    "features": [
+      "Scratch-resistant Italian leather",
+      "3-layer memory foam",
+      "Natural oak wood frame",
+      "Easy to clean"
+    ],
+    "sku": "SOFA-001-IT",
+    "tags": ["sofa", "living room", "premium", "leather", "italy"],
+    "relatedIds": [2, 3, 4, 5]
+  },
+  {
     "id": 2,
     "name": "Syltherine Dining Set",
     "slug": "syltherine-dining-set",

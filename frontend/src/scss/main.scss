@@ -4,13 +4,15 @@
 //component
 @import "../component/header/Header.scss";
 @import "../component/footer/Footer.scss";
-@import "../component/products/item/ProductItem.scss";
+@import "../component/products/item/ProductCart.scss";
+@import "../component/products/ProductList.scss";
+@import "../component/modal/component/cartstyle/CartItem.scss";
 
 //header
 @import "../component/header/component/actions/HeaderActions.scss";
 @import "../component/header/component/navigation/Navigation.scss";
-@import "../component//header/component/logo/Logo.scss";
-@import "../component/header/component/actions/child/ListCart.scss";
+@import "../component/header/component/logo/Logo.scss";
+@import "../component/modal/CartModal.scss";
 
 //home
 @import "../pages/home/component/banner/maskbanner/MaskBanner.scss";

@@ -1,6 +1,10 @@
+import ProductList from "../../component/products/ProductList"
+
 const Shop = () => {
     return(
-        <h1>Shop</h1>
+        <div className="shop">
+            <ProductList limit={16} showMore={false}/>
+        </div>
     )
 }
 export default Shop

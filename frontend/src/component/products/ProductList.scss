@@ -1,0 +1,19 @@
+.products-section {
+  width: 90%;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 25px;
+  }
+
+  button {
+    margin: 0 auto
+  }
+}

@@ -8,7 +8,7 @@ const Home = () => {
     <div className="home">
     <Banner/>
     <RoomType/>
-    <ProductList/>
+    <ProductList limit={8} showMore={true}/>
     <Inspiration/>
     </div>
   )
