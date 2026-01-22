@@ -4,12 +4,12 @@ import { Product } from "../../types/product";
 import { Link } from "react-router-dom";
 
 interface ProductListProps {
-  limit?: number; 
-  showTitle?: boolean; 
-  showMore?:boolean
+  limit?: number;
+  // showTitle?: boolean;
+  showMore?: boolean;
 }
 
-const ProductList = ({ limit, showTitle, showMore = true }: ProductListProps) => {
+const ProductList = ({ limit, showMore = true }: ProductListProps) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -33,26 +33,23 @@ const ProductList = ({ limit, showTitle, showMore = true }: ProductListProps) =>
     fetchProducts();
   }, []);
 
-  const handleAddToCart = (product: Product) => {
-    console.log("Add to cart:", product);
-  };
+  // const handleAddToCart = (product: Product) => {
+  //   console.log("Add to cart:", product);
+  // };
 
   if (loading) return <p>Loading products...</p>;
   if (error) return <p>{error}</p>;
 
-  // LOGIC LIMIT: Nếu có limit thì cắt mảng, không thì hiện hết (cho trang Shop)
+  // LOGIC LIMIT: Nếu có limit thì cắt mảng, không thì hiện hết
   const displayedProducts = limit ? products.slice(0, limit) : products;
 
   return (
     <section className="products-section">
-      {showTitle && <h2>Our Products</h2>}
+      <h2>Our Products</h2>
 
       <div className="products-grid">
         {displayedProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-          />
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
 
@@ -60,7 +57,7 @@ const ProductList = ({ limit, showTitle, showMore = true }: ProductListProps) =>
       {showMore && (
         <div className="show-more-container">
           <Link to="/shop" className="show-more-btn">
-            Show More
+            <button>Show More</button>
           </Link>
         </div>
       )}

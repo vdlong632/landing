@@ -40,13 +40,13 @@ const ProductCard = ({ product }: Props) => {
           </button>
 
           <div className="product-actions">
-            <button className="action-item" onClick={handleShare}>
+            <button className="action-item share" onClick={handleShare}>
               Share
             </button>
-            <button className="action-item" onClick={handleCompare}>
+            <button className="action-item compare" onClick={handleCompare}>
               Compare
             </button>
-            <button className="action-item" onClick={() => addToWishlist(product)}>
+            <button className="action-item like" onClick={() => addToWishlist(product)}>
               Like
             </button>
           </div>

@@ -12,7 +12,8 @@ const CartItemList = () => {
             <CartItem key={item.id} item={item}/>
           ))
         ) : (
-          <p className="empty-cart">Giỏ hàng đang trống</p>
+          // <p className="empty-cart">Giỏ hàng đang trống</p>
+          <p></p>
         )}
       </div>
     </div>

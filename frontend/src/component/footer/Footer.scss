@@ -48,6 +48,9 @@
           font-weight: 600;
         }
       }
+      @media (max-width: 1024px) {
+        margin: 0 3em;
+      }
     }
 
     .footer-newsletter {

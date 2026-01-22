@@ -74,10 +74,29 @@
       color: $text-banner;
       font-weight: 600;
     }
+
+    .product-actions {
+      .action-item {
+        background: transparent;
+        color: white;
+        border: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        // Trạng thái khi đã Like
+        &.like.active {
+          color: #e97171;
+          font-weight: bold;
+        }
+
+        &:hover {
+          color: #b88e2f;
+        }
+      }
+    }
   }
 }
 
-/* Hiệu ứng Hover */
 .product-item:hover .product-overlay {
   opacity: 1;
   visibility: visible;

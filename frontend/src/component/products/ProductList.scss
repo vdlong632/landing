@@ -1,5 +1,6 @@
 .products-section {
   width: 90%;
+  padding: 1em 0 2em 0;;
   margin: 0 auto;
 
   h2 {
@@ -13,7 +14,16 @@
     gap: 25px;
   }
 
-  button {
-    margin: 0 auto
+  .show-more-container {
+    text-align: center;
+    margin: 2em 0;
+
+    button {
+      padding: 1em 3em;
+      font-size: $h6;
+      font-weight: 600;
+      color: $text-banner;
+      border: 3px solid $text-banner
+    }
   }
 }
