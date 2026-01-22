@@ -1,39 +1,54 @@
 import { Product } from "../../../types/product";
-import { useCart } from "../../context/CartContext"; // Đảm bảo đường dẫn đúng
+import { useCart } from "../../context/CartContext";
+import { useWishlist } from "../../context/WishListContext"
 
 interface Props {
   product: Product;
 }
 
 const ProductCard = ({ product }: Props) => {
-  // Lấy hàm addToCart từ Context (đổi tên để tránh nhầm lẫn nếu cần)
   const { addToCart } = useCart();
+  const { addToWishlist } = useWishlist();
 
-  const displayImage = (product?.image && product.image.length > 0) 
-    ? product.image[0] 
-    : "/placeholder.jpg";
+  const displayImage =
+    Array.isArray(product.images) && product.images.length > 0
+      ? product.images[0]
+      : "/placeholder.jpg";
+
+  const handleShare = () => {
+    const productUrl = `${window.location.origin}/product/${product.slug}`;
+    navigator.clipboard.writeText(productUrl);
+  };
+
+  const handleCompare = () => {
+    console.log("So sánh sản phẩm:", product.name);
+  };
+
 
   return (
     <div className="product-item">
       <div className="product-image-container">
-        <img
-          src={displayImage}
-          alt={product?.name || "Product"}
-        />
+        <img src={displayImage} alt={product?.name || "Product"} />
 
-        {/* Overlay đè lên toàn bộ ảnh và badge khi hover (theo SCSS cũ của bạn) */}
+        {/* Overlay đè lên toàn bộ ảnh và badge khi hover*/}
         <div className="product-overlay">
           <button
             className="add-to-cart-btn"
-            onClick={() => addToCart(product)} // Sử dụng hàm từ Context
+            onClick={() => addToCart(product)}
           >
             Add to cart
           </button>
 
           <div className="product-actions">
-            <div className="action-item"><span>Share</span></div>
-            <div className="action-item"><span>Compare</span></div>
-            <div className="action-item"><span>Like</span></div>
+            <button className="action-item" onClick={handleShare}>
+              Share
+            </button>
+            <button className="action-item" onClick={handleCompare}>
+              Compare
+            </button>
+            <button className="action-item" onClick={() => addToWishlist(product)}>
+              Like
+            </button>
           </div>
         </div>
 
@@ -48,7 +63,7 @@ const ProductCard = ({ product }: Props) => {
 
       <div className="product-info">
         <h3>{product.name}</h3>
-        <p className="subtitle">{product.category}</p>
+        <p className="subtitle">{product.material}</p>
         <div className="price-box">
           <span className="current-price">
             Rp {product.price.toLocaleString()}

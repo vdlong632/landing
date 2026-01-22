@@ -8,10 +8,12 @@
 @import "../component/products/ProductList.scss";
 
 //modal
-@import "../component/modal/component/cartstyle/CartItem.scss";
 @import "../component/modal/component/CartItemList.scss";
 @import "../component/modal/component/CartSummary.scss";
-@import "../component/modal/component/CartActions.scss";
+@import "../component/modal/component/cartstyle/CartActions.scss";
+@import "../component/modal/component/CartItem.scss";
+
+@import "../component/likemodal/LikeModal.scss";
 
 //header
 @import "../component/header/component/actions/HeaderActions.scss";

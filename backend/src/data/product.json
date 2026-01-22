@@ -16,10 +16,10 @@
     "dimensions": "220x95x85 cm",
     "weight": "85 kg",
     "images": [
-      "/images/products/sample.png",
-      "/images/products/asgaard-2.jpg",
-      "/images/products/asgaard-3.jpg",
-      "/images/products/asgaard-4.jpg"
+      "http://localhost:3001/images/products/asgaard-1.jpg",
+      "http://localhost:3001/images/products/asgaard-2.jpg",
+      "http://localhost:3001/images/products/asgaard-3.jpg",
+      "http://localhost:3001/images/products/asgaard-4.jpg"
     ],
     "colors": [
       { "name": "Dark Brown", "code": "#3E2723", "stock": 15 },

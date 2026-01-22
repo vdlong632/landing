@@ -1,4 +1,5 @@
 import { useCart } from "../../context/CartContext";
+import CartItem from "./CartItem";
 
 const CartItemList = () => {
   const { cartItems } = useCart();
@@ -6,20 +7,16 @@ const CartItemList = () => {
   return (
     <div className="shopping-cart-modal">
       <div className="cart-items-list">
-        {cartItems.map((item) => (
-          <div key={item.id} className="cart-item">
-            <img src={item.image?.[0]} alt={item.name} />
-            <div className="item-info">
-              <h4>{item.name}</h4>
-              <p>
-                {item.quantity} X <span>Rs. {item.price.toLocaleString()}</span>
-              </p>
-            </div>
-            <button className="remove-btn">X</button>
-          </div>
-        ))}
+        {cartItems.length > 0 ? (
+          cartItems.map((item) => (
+            <CartItem key={item.id} item={item}/>
+          ))
+        ) : (
+          <p className="empty-cart">Giỏ hàng đang trống</p>
+        )}
       </div>
     </div>
   );
 };
-export default CartItemList
+
+export default CartItemList;

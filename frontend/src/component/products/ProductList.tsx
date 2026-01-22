@@ -3,10 +3,9 @@ import ProductCard from "./item/ProductCart";
 import { Product } from "../../types/product";
 import { Link } from "react-router-dom";
 
-// Thêm Interface để định nghĩa props
 interface ProductListProps {
-  limit?: number; // Dấu ? nghĩa là không bắt buộc (Shop sẽ không cần)
-  showTitle?: boolean; // Tùy chọn ẩn/hiện tiêu đề "Our Products"
+  limit?: number; 
+  showTitle?: boolean; 
   showMore?:boolean
 }
 

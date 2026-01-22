@@ -1,6 +1,21 @@
+import { useCart } from "../../context/CartContext";
+
 const CartSummary = () => {
-    return(
-        <div className="cart_summary">summary</div>
-    )
-}
-export default CartSummary
+  const { cartItems } = useCart();
+
+  // Tính tổng tiền từ mảng cartItems
+  const totalPrice = cartItems.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  );
+
+  return (
+    <div className="cart-summary">
+      <div className="summary-row">
+        <span>Subtotal:</span>
+        <span className="total-amount">Rs. {totalPrice.toLocaleString()}</span>
+      </div>
+    </div>
+  );
+};
+export default CartSummary;
