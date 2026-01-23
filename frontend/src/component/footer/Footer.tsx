@@ -19,7 +19,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-section">
+        <div className="footer-section help">
           <span>Help</span>
           <ul>
             {help.map(item => <li key={item}>{item}</li>)}

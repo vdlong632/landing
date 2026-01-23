@@ -1,14 +1,23 @@
 .navigation {
-    .nav__list {
-        display: flex;
-        list-style: none;
-        gap: 4.5em;
-        padding: 0;
+  .nav__list {
+    display: flex;
+    list-style: none;
+    gap: 4.5em;
+    padding: 0;
 
-        a {
-            text-decoration: none;
-            color: black;
-            font-weight: 550;
-        }
+    @media (max-width: 1024px) {
+      display: flex;
+      list-style: none;
+      gap: 3em;
     }
+    @media (max-width: 768px){
+        display: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 550;
+    }
+  }
 }

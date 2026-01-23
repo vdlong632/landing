@@ -10,5 +10,15 @@
         font-size: 34px;
         color: black;
         font-weight: 600;
+        margin: 0;
+    }
+
+    @media (max-width: 425px){
+        img {
+            width: 25%;
+        }
+        p {
+            font-size: 25px
+        }
     }
 }

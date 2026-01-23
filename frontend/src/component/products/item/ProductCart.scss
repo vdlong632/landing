@@ -52,7 +52,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0; /* Phủ kín xuống tận đáy card */
+    bottom: 0; 
     background-color: rgba(58, 58, 58, 0.7);
     display: flex;
     flex-direction: column;
@@ -83,14 +83,8 @@
         transition: all 0.3s ease;
         cursor: pointer;
 
-        // Trạng thái khi đã Like
-        &.like.active {
-          color: #e97171;
-          font-weight: bold;
-        }
-
-        &:hover {
-          color: #b88e2f;
+        .liked {
+          background: red
         }
       }
     }

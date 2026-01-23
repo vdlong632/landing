@@ -8,24 +8,24 @@ import WishListModal from "../../../likemodal/WishListModal";
 
 const HeaderActions = () => {
   const [showCart, setShowCart] = useState<boolean>(false);
-  const [showWishList, setShowWishList] = useState<boolean>(false)
+  const [showWishList, setShowWishList] = useState<boolean>(false);
 
   const handleCartClick = () => {
-    setShowCart(prev => !prev);
+    setShowCart((prev) => !prev);
   };
   const handleWishListClick = () => {
-    setShowWishList(prev => !prev)
-  }
+    setShowWishList((prev) => !prev);
+  };
 
   return (
     <div className="action">
       <User />
       <Search />
-      <WishListIcon onClick={handleWishListClick}/>
-      {showWishList && <WishListModal onClose={() => setShowWishList(false)}/>}
+      <WishListIcon onClick={handleWishListClick} />
+      {showWishList && <WishListModal onClose={() => setShowWishList(false)} />}
       <CartIcon onClick={handleCartClick} />
 
-      {showCart && <CartModal onClose={() => setShowCart(false)} />}
+      {showCart && <CartModal open={showCart} onClose={() => setShowCart(false)} />}
     </div>
   );
 };

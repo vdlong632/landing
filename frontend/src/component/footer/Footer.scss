@@ -51,6 +51,14 @@
       @media (max-width: 1024px) {
         margin: 0 3em;
       }
+
+      .help {
+        @media (max-width: 1024px){
+          ul {
+            gap: 1.5em
+          }
+        }
+      }
     }
 
     .footer-newsletter {
@@ -78,5 +86,31 @@
   .footer-bottom {
     padding: 2em 0;
     border-top: 1px solid $text-light;
+  }
+
+  @media (max-width: 768px){
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+
+      .footer-brand {
+        h5 {
+          padding-bottom: 0.5em;
+        }
+        p {
+          padding-bottom: 0.5em;
+        }
+      }
+
+      .footer-section {
+        
+        margin: 0;
+        ul {
+          display: flex;
+          flex-direction: row;
+          
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,13 @@
+.swiper {
+    // max-width: 34%;
+    margin: 0 !important;
+    overflow: hidden;
+    .swiper-initialized {
+        margin: 0
+    }
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+}

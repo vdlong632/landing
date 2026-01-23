@@ -5,11 +5,12 @@ import CartActions from "./component/CartActions";
 
 interface ListCartProps {
   onClose: () => void;
+  open: boolean;
 }
 
-const ListCart: React.FC<ListCartProps> = ({ onClose }) => {
+const ListCart: React.FC<ListCartProps> = ({ open, onClose }) => {
   return (
-    <div className="modal-overlay" onClick={onClose}>
+    <div className={`modal-overlay ${open ? "show" : ""}`} onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="heading-cart">
           <h5>Shopping Cart</h5>
@@ -17,9 +18,9 @@ const ListCart: React.FC<ListCartProps> = ({ onClose }) => {
             x
           </button>
         </div>
-        <CartItemList/>
-        <CartSummary/>
-        <CartActions/>
+        <CartItemList />
+        <CartSummary />
+        <CartActions />
       </div>
     </div>
   );

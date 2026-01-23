@@ -4,29 +4,42 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 9999;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
+.modal-overlay .show {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-overlay .show .modal-content {
+    transform: translateX(0);
+
+}
 
 .modal-content {
   background: #fff;
   padding: 1.5em;
-  height: 100vh;
+  height: 100%;
   width: 25%;
   text-align: center;
+
+  @media (max-width: 768px){
+    width: 50%;
+    height: 100%
+  }
 
   .heading-cart {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
-     h5 {
-        font-size: $h5;
-        font-weight: 650;
-        margin: 0;
-        width: 70%;
-     }
+    h5 {
+      font-size: $h5;
+      font-weight: 650;
+      margin: 0;
+      width: 70%;
+    }
   }
 }

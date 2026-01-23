@@ -1,7 +1,13 @@
 .banner {
-    position: relative;
+  position: relative;
 
+  img {
+    width: 100%;
+  }
+  @media (max-width: 425px) {
     img {
-        width: 100%
+      background-size: cover;
+      background-position: center;
     }
+  }
 }

@@ -8,7 +8,7 @@ interface CartItemProps {
 const CartItem = ({ item }: CartItemProps) => {
   const { removeFromCart } = useCart();
 
-  // Lấy ảnh đầu tiên trong mảng images, fallback sang placeholder
+  // Lấy ảnh đầu tiên trong mảng images
   const displayImage =
     Array.isArray(item.images) && item.images.length > 0
       ? item.images[0]

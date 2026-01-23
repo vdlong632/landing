@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { Product } from "../../../types/product";
 import { useCart } from "../../context/CartContext";
-import { useWishlist } from "../../context/WishListContext"
+import { useWishlist } from "../../context/WishListContext";
 
 interface Props {
   product: Product;
@@ -8,7 +9,9 @@ interface Props {
 
 const ProductCard = ({ product }: Props) => {
   const { addToCart } = useCart();
-  const { addToWishlist } = useWishlist();
+  const { wishlistItems, addToWishlist, removeFromWishlist } = useWishlist();
+
+  const liked = wishlistItems.some((p) => p.id === product.id);
 
   const displayImage =
     Array.isArray(product.images) && product.images.length > 0
@@ -24,6 +27,15 @@ const ProductCard = ({ product }: Props) => {
     console.log("So sánh sản phẩm:", product.name);
   };
 
+  const handleLike = () => {
+    if (liked) {
+      removeFromWishlist(product.id);
+      console.log("Đã hủy like");
+    } else {
+      addToWishlist(product);
+      console.log("Đã like");
+    }
+  };
 
   return (
     <div className="product-item">
@@ -46,8 +58,12 @@ const ProductCard = ({ product }: Props) => {
             <button className="action-item compare" onClick={handleCompare}>
               Compare
             </button>
-            <button className="action-item like" onClick={() => addToWishlist(product)}>
-              Like
+            <button
+              className={`action-item ${liked ? "liked" : "like"}`}
+              onClick={handleLike}
+            >
+              {" "}
+              {liked ? "Liked" : "Like"}
             </button>
           </div>
         </div>
