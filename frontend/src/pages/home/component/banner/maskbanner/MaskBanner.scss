@@ -9,6 +9,20 @@
   bottom: 17%;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 425px) {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+
+    .content {
+      margin-bottom: 1em;
+      p {
+        width: 90%
+      }
+    }
+  }
 }
 .content {
   width: 90%;
@@ -68,7 +82,5 @@
       font-size: 14px;
       margin-top: 0;
     }
-
-    
   }
 }

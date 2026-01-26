@@ -1,6 +1,14 @@
+import PageHeader from "../../component/pageheader/PageHeader";
+
 const Blog = () => {
   return (
-    <h1>Blog</h1>
-  )
+    <PageHeader
+      title="Cart"
+      breadcrumb={[
+        { label: "Home", path: "/" },
+        { label: "Blog", path: "/blog" },
+      ]}
+    />
+  );
 };
-export default Blog
+export default Blog;

@@ -40,7 +40,7 @@ const ProductList = ({ limit, showMore = true }: ProductListProps) => {
   if (loading) return <p>Loading products...</p>;
   if (error) return <p>{error}</p>;
 
-  // LOGIC LIMIT: Nếu có limit thì cắt mảng, không thì hiện hết
+  //Nếu có limit thì cắt mảng, không thì hiện hết
   const displayedProducts = limit ? products.slice(0, limit) : products;
 
   return (
@@ -53,7 +53,7 @@ const ProductList = ({ limit, showMore = true }: ProductListProps) => {
         ))}
       </div>
 
-      {/* Chỉ hiện nút Show More nếu đang ở trang có giới hạn (thường là Home) */}
+      {/* nút Show More chỉ hiển thị ở trang Home*/}
       {showMore && (
         <div className="show-more-container">
           <Link to="/shop" className="show-more-btn">

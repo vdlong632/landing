@@ -3,6 +3,11 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px){
+    width: 50%;
+    height: 65vh;
+  }
 }
 
 .cart-items-list {

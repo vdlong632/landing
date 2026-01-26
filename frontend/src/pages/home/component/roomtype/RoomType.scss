@@ -15,15 +15,22 @@
 }
 .text {
   text-align: center;
-  margin: 3em;
+  margin: 1.5em;
 
   h4 {
     font-size: $h4;
     font-weight: 650;
     margin: 0;
+    @media (max-width: 425px) {
+      font-size: 25px;
+    }
   }
   p {
     font-size: $body1;
     color: rgba(102, 102, 102, 1);
+    @media (max-width: 425px) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 }

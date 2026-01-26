@@ -12,7 +12,13 @@
     }
     @media (max-width: 768px){
         display: none;
+        width: 0px
     }
+    @media (max-width: 425px){
+        display: none;
+        width: 0px
+    }
+    
 
     a {
       text-decoration: none;

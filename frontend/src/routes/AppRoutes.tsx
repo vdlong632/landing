@@ -8,6 +8,10 @@ import Contact from "../pages/contact/Contact";
 import Error from "../pages/error/Error"
 import Shop from "../pages/shop/Shop"
 import User from "../component/header/component/actions/child/User";
+import ProductDetail from "../pages/productdetail/ProductDetail";
+import Cart from "../pages/cart/Cart";
+import Checkout from "../pages/checkout/Checkout";
+import Comparison from "../pages/comparison/Comparison";
 
 export default function AppRoutes() {
   return (
@@ -20,9 +24,10 @@ export default function AppRoutes() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/profile" element={<User />} />
-        <Route path="/cart" element={<User />} />
-        <Route path="/checkout" element={<User />} />
-        <Route path="/comparison" element={<User />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/comparison" element={<Comparison />} />
+        <Route path="/product/:slug" element={<ProductDetail />} />
         
       </Route>
 

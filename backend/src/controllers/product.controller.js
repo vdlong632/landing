@@ -31,6 +31,20 @@ exports.getProductById = (req, res) => {
   res.json(product);
 };
 
+//Get /api/products/slug
+exports.getProductBySlug = (req, res) => {
+  const products = readData();
+  const product = products.find((p) => p.slug === req.params.slug);
+
+  if (!product) {
+    return res
+      .status(404)
+      .json({ message: "Sản phẩm không tồn tại với slug này" });
+  }
+
+  res.json(product);
+};
+
 // POST /api/products
 exports.createProduct = (req, res) => {
   const products = readData();

@@ -59,8 +59,8 @@
     "dimensions": "Table: 180x90x75 cm | Chair: 45x55x85 cm",
     "weight": "120 kg",
     "images": [
-      "/images/products/syltherine-1.jpg",
-      "/images/products/syltherine-2.jpg"
+      "http://localhost:3001/images/products/asgaard-2.jpg",
+      "http://localhost:3001/images/products/asgaard-3.jpg"
     ],
     "colors": [
       { "name": "Walnut Wood", "code": "#5D4037", "stock": 15 },
@@ -100,13 +100,20 @@
     "material": "Premium Canvas Fabric",
     "dimensions": "85x95x105 cm",
     "weight": "25 kg",
-    "images": ["/images/products/leviosa-1.jpg"],
+    "images": [
+      "http://localhost:3001/images/products/asgaard-4.jpg",
+      "http://localhost:3001/images/products/asgaard-1.jpg"
+    ],
     "colors": [
       { "name": "Light Gray", "code": "#BDBDBD", "stock": 10 },
       { "name": "Mint Green", "code": "#80CBC4", "stock": 8 },
       { "name": "Beige", "code": "#D7CCC8", "stock": 10 }
     ],
-    "sizes": [],
+    "sizes": [
+      { "name": "4 chairs", "code": "S", "priceAdjustment": -3000000 },
+      { "name": "6 chairs", "code": "M", "priceAdjustment": 0 },
+      { "name": "8 chairs", "code": "L", "priceAdjustment": 4000000 }
+    ],
     "description": "Scandinavian-style relaxation chair with adjustable tilt. Perfect for living rooms and reading corners.",
     "features": [
       "Adjustable tilt mechanism",
@@ -136,14 +143,18 @@
     "dimensions": "Table: 150x90x75 cm | Chair: 60x65x85 cm",
     "weight": "95 kg",
     "images": [
-      "/images/products/respira-1.jpg",
-      "/images/products/respira-2.jpg"
+      "http://localhost:3001/images/products/asgaard-3.jpg",
+      "http://localhost:3001/images/products/asgaard-1.jpg"
     ],
     "colors": [
       { "name": "Matte Black", "code": "#212121", "stock": 8 },
       { "name": "Silver Gray", "code": "#9E9E9E", "stock": 10 }
     ],
-    "sizes": [],
+    "sizes": [
+      { "name": "Small (100cm)", "code": "S", "priceAdjustment": -1500000 },
+      { "name": "Medium (140cm)", "code": "M", "priceAdjustment": 0 },
+      { "name": "Large (180cm)", "code": "L", "priceAdjustment": 2000000 }
+    ],
     "description": "Waterproof outdoor furniture set that withstands all weather conditions. Modern design perfect for gardens and balconies.",
     "features": [
       "100% waterproof",
@@ -173,9 +184,10 @@
     "dimensions": "220x220x120 cm",
     "weight": "180 kg",
     "images": [
-      "/images/products/grifo-1.jpg",
-      "/images/products/grifo-2.jpg",
-      "/images/products/grifo-3.jpg"
+      "http://localhost:3001/images/products/asgaard-1.jpg",
+      "http://localhost:3001/images/products/asgaard-3.jpg",
+      "http://localhost:3001/images/products/asgaard-4.jpg",
+      "http://localhost:3001/images/products/asgaard-2.jpg"
     ],
     "colors": [
       { "name": "Natural Oak", "code": "#8D6E63", "stock": 12 },
@@ -218,7 +230,11 @@
     "material": "Melamine-coated MDF",
     "dimensions": "140x60x75 cm",
     "weight": "35 kg",
-    "images": ["/images/products/muggo-1.jpg", "/images/products/muggo-2.jpg"],
+    "images": [
+      "http://localhost:3001/images/products/asgaard-1.jpg",
+      "http://localhost:3001/images/products/asgaard-4.jpg"
+    ],
+
     "colors": [
       { "name": "Glossy White", "code": "#FFFFFF", "stock": 20 },
       { "name": "Wood Grain", "code": "#A1887F", "stock": 15 },
@@ -264,8 +280,8 @@
     "dimensions": "190x100x140 cm",
     "weight": "55 kg",
     "images": [
-      "/images/products/pingky-1.jpg",
-      "/images/products/pingky-2.jpg"
+      "http://localhost:3001/images/products/asgaard-2.jpg",
+      "http://localhost:3001/images/products/asgaard-3.jpg"
     ],
     "colors": [
       { "name": "Sky Blue", "code": "#29B6F6", "stock": 10 },
@@ -312,8 +328,8 @@
     "dimensions": "Ottoman: 60x60x40 cm | Set of 2",
     "weight": "18 kg",
     "images": [
-      "/images/products/lolito-1.jpg",
-      "/images/products/lolito-2.jpg"
+      "http://localhost:3001/images/products/asgaard-4.jpg",
+      "http://localhost:3001/images/products/asgaard-3.jpg"
     ],
     "colors": [
       { "name": "Emerald Green", "code": "#00695C", "stock": 15 },
@@ -354,8 +370,8 @@
     "dimensions": "180x35x200 cm",
     "weight": "42 kg",
     "images": [
-      "/images/products/bookshelf-1.jpg",
-      "/images/products/bookshelf-2.jpg"
+      "http://localhost:3001/images/products/asgaard-3.jpg",
+      "http://localhost:3001/images/products/asgaard-1.jpg"
     ],
     "colors": [
       { "name": "Black", "code": "#000000", "stock": 15 },
@@ -396,8 +412,8 @@
     "dimensions": "65x65x120-135 cm",
     "weight": "28 kg",
     "images": [
-      "/images/products/office-chair-1.jpg",
-      "/images/products/office-chair-2.jpg"
+      "http://localhost:3001/images/products/asgaard-4.jpg",
+      "http://localhost:3001/images/products/asgaard-2.jpg"
     ],
     "colors": [
       { "name": "Black Mesh", "code": "#263238", "stock": 25 },
@@ -444,8 +460,8 @@
     "dimensions": "120x60x45 cm",
     "weight": "32 kg",
     "images": [
-      "/images/products/coffee-table-1.jpg",
-      "/images/products/coffee-table-2.jpg"
+      "http://localhost:3001/images/products/asgaard-2.jpg",
+      "http://localhost:3001/images/products/asgaard-3.jpg"
     ],
     "colors": [
       { "name": "Natural Oak", "code": "#8D6E63", "stock": 20 },
@@ -486,8 +502,8 @@
     "dimensions": "Sofa: 180x85x75 cm | Chair: 80x85x75 cm",
     "weight": "110 kg",
     "images": [
-      "/images/products/outdoor-lounge-1.jpg",
-      "/images/products/outdoor-lounge-2.jpg"
+      "http://localhost:3001/images/products/asgaard-4.jpg",
+      "http://localhost:3001/images/products/asgaard-3.jpg"
     ],
     "colors": [
       { "name": "Gray Rattan", "code": "#757575", "stock": 8 },
@@ -527,8 +543,8 @@
     "dimensions": "100x45x150 cm",
     "weight": "38 kg",
     "images": [
-      "/images/products/dressing-table-1.jpg",
-      "/images/products/dressing-table-2.jpg"
+      "http://localhost:3001/images/products/asgaard-2.jpg",
+      "http://localhost:3001/images/products/asgaard-1.jpg"
     ],
     "colors": [
       { "name": "White", "code": "#FFFFFF", "stock": 15 },
@@ -568,8 +584,8 @@
     "dimensions": "45x45x75-95 cm",
     "weight": "12 kg each",
     "images": [
-      "/images/products/bar-stool-1.jpg",
-      "/images/products/bar-stool-2.jpg"
+      "http://localhost:3001/images/products/asgaard-1.jpg",
+      "http://localhost:3001/images/products/asgaard-3.jpg"
     ],
     "colors": [
       { "name": "Black Leather", "code": "#212121", "stock": 15 },
@@ -610,8 +626,8 @@
     "dimensions": "180x40x50 cm",
     "weight": "45 kg",
     "images": [
-      "/images/products/tv-stand-1.jpg",
-      "/images/products/tv-stand-2.jpg"
+      "http://localhost:3001/images/products/asgaard-4.jpg",
+      "http://localhost:3001/images/products/asgaard-1.jpg"
     ],
     "colors": [
       { "name": "Black Brown", "code": "#3E2723", "stock": 15 },
@@ -657,8 +673,8 @@
     "dimensions": "100x60x75-90 cm",
     "weight": "22 kg",
     "images": [
-      "/images/products/kids-desk-1.jpg",
-      "/images/products/kids-desk-2.jpg"
+      "http://localhost:3001/images/products/asgaard-2.jpg",
+      "http://localhost:3001/images/products/asgaard-3.jpg"
     ],
     "colors": [
       { "name": "Blue", "code": "#2196F3", "stock": 15 },
@@ -750,7 +766,11 @@
       { "name": "Blush Pink", "code": "#F8BBD0", "stock": 12 },
       { "name": "Navy Blue", "code": "#0D47A1", "stock": 11 }
     ],
-    "sizes": [],
+    "sizes": [
+      { "name": "Small (100cm)", "code": "S", "priceAdjustment": -1500000 },
+      { "name": "Medium (140cm)", "code": "M", "priceAdjustment": 0 },
+      { "name": "Large (180cm)", "code": "L", "priceAdjustment": 2000000 }
+    ],
     "description": "Statement velvet accent chair with elegant curved backrest and tapered wood legs. Perfect for adding color to any room.",
     "features": [
       "Premium velvet fabric",
@@ -1676,7 +1696,11 @@
       { "name": "Gray Fabric", "code": "#546E7A", "stock": 12 },
       { "name": "Blue Fabric", "code": "#1565C0", "stock": 11 }
     ],
-    "sizes": [],
+    "sizes": [
+      { "name": "Small (100cm)", "code": "S", "priceAdjustment": -1500000 },
+      { "name": "Medium (140cm)", "code": "M", "priceAdjustment": 0 },
+      { "name": "Large (180cm)", "code": "L", "priceAdjustment": 2000000 }
+    ],
     "description": "Modern reception chair with chrome legs and comfortable cushioning. Stackable design for easy storage.",
     "features": [
       "Stackable design",

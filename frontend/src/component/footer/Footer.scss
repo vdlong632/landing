@@ -29,7 +29,7 @@
         width: 90%;
         line-height: 1.8;
         color: $text-light;
-        margin: 0;
+        margin-bottom: 1.5em;
       }
     }
 
@@ -59,9 +59,28 @@
           }
         }
       }
+
+      @media (max-width: 768px){
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+      }
+      @media (max-width: 425px){
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
     }
 
     .footer-newsletter {
+      @media (max-width: 768px){
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+      }
+      span {
+        padding-top: 4px;
+      }
       .subscribe-form {
         input {
           border: none;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Product } from "../../../types/product";
 import { useCart } from "../../context/CartContext";
 import { useWishlist } from "../../context/WishListContext";
@@ -8,6 +9,10 @@ interface Props {
 }
 
 const ProductCard = ({ product }: Props) => {
+  const navigate = useNavigate();
+  const handleGoToDetail = () => {
+    navigate(`/product/${product.slug}`);
+  };
   const { addToCart } = useCart();
   const { wishlistItems, addToWishlist, removeFromWishlist } = useWishlist();
 
@@ -18,16 +23,23 @@ const ProductCard = ({ product }: Props) => {
       ? product.images[0]
       : "/placeholder.jpg";
 
-  const handleShare = () => {
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    addToCart(product);
+  };
+  const handleShare = (e: React.MouseEvent) => {
+    e.stopPropagation();
     const productUrl = `${window.location.origin}/product/${product.slug}`;
     navigator.clipboard.writeText(productUrl);
   };
 
-  const handleCompare = () => {
+  const handleCompare = (e: React.MouseEvent) => {
+    e.stopPropagation();
     console.log("So sánh sản phẩm:", product.name);
   };
 
-  const handleLike = () => {
+  const handleLike = (e: React.MouseEvent) => {
+    e.stopPropagation();
     if (liked) {
       removeFromWishlist(product.id);
       console.log("Đã hủy like");
@@ -38,16 +50,13 @@ const ProductCard = ({ product }: Props) => {
   };
 
   return (
-    <div className="product-item">
+    <div className="product-item" onClick={handleGoToDetail}>
       <div className="product-image-container">
         <img src={displayImage} alt={product?.name || "Product"} />
 
         {/* Overlay đè lên toàn bộ ảnh và badge khi hover*/}
         <div className="product-overlay">
-          <button
-            className="add-to-cart-btn"
-            onClick={() => addToCart(product)}
-          >
+          <button className="add-to-cart-btn" onClick={handleAddToCart}>
             Add to cart
           </button>
 

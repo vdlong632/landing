@@ -1,6 +1,14 @@
+import PageHeader from "../../component/pageheader/PageHeader";
+
 const Contact = () => {
   return (
-    <h1>Contact</h1>
+    <PageHeader
+        title="Cart"
+        breadcrumb={[
+          { label: "Home", path: "/" },
+          { label: "Contact", path: "/contact" },
+        ]}
+      />
   )
 };
 export default Contact

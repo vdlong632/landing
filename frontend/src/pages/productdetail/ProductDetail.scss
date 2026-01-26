@@ -1,0 +1,31 @@
+.product-detail-page {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+
+    .images-section {
+        display: flex;
+        gap: 20px;
+
+        .thumbnail-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+
+        .main-image {
+            img {
+                width: 400px;
+                height: 450px;
+            }
+        }
+    }
+}
