@@ -3,9 +3,15 @@ import { useCart } from "../../context/CartContext";
 
 interface CartItemProps {
   item: Product & { quantity: number };
+  showSubtotal?: boolean;
+  mode?: "modal" | "page";
 }
 
-const CartItem = ({ item }: CartItemProps) => {
+const CartItem = ({
+  item,
+  mode = "page",
+  showSubtotal = true,
+}: CartItemProps) => {
   const { removeFromCart } = useCart();
 
   // Lấy ảnh đầu tiên trong mảng images
@@ -21,14 +27,40 @@ const CartItem = ({ item }: CartItemProps) => {
       <div className="item-info">
         <span className="item-name">{item.name}</span>
         <div className="item-meta">
-          <span className="item-quantity">{item.quantity} x</span>
-          <span className="item-price">Rs. {item.price.toLocaleString()}</span>
+          {mode === "modal" ? (
+            <>
+              {" "}
+              <span className="item-quantity">{item.quantity} x</span>{" "}
+              <span className="item-price">
+                Rs. {item.price.toLocaleString()}
+              </span>{" "}
+            </>
+          ) : (
+            <>
+              {" "}
+              <span className="item-price">
+                Rs. {item.price.toLocaleString()}
+              </span>{" "}
+              <span className="item-quantity">{item.quantity} </span>{" "}
+            </>
+          )}
+          {showSubtotal && (
+            <span className="item-subtotal">
+              Rs. {(item.price * item.quantity).toLocaleString()}
+            </span>
+          )}
         </div>
       </div>
 
-      <button className="remove-btn" onClick={() => removeFromCart(item.id)}>
-        X
-      </button>
+      {mode === "modal" ? (
+        <button className="remove-btn" onClick={() => removeFromCart(item.id)}>
+          X
+        </button>
+      ) : (
+        <button className="remove-btn" onClick={() => removeFromCart(item.id)}>
+          <img src="deleteBtn.png" alt="" />
+        </button>
+      )}
     </div>
   );
 };

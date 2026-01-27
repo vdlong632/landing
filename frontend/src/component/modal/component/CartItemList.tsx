@@ -9,7 +9,7 @@ const CartItemList = () => {
       <div className="cart-items-list">
         {cartItems.length > 0 ? (
           cartItems.map((item) => (
-            <CartItem key={item.id} item={item}/>
+            <CartItem key={item.id} item={item} showSubtotal={false} mode="modal"/>
           ))
         ) : (
           // <p className="empty-cart">Giỏ hàng đang trống</p>

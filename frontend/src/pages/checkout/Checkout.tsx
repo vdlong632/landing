@@ -4,12 +4,13 @@ const Checkout = () => {
   return (
     <div>
         <PageHeader
-        title="Cart"
+        title="Checkout"
         breadcrumb={[
           { label: "Home", path: "/" },
           { label: "Checkout", path: "/checkout" },
         ]}
       />
+      <div></div>
     </div>
   );
 };

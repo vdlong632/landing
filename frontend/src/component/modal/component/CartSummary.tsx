@@ -3,7 +3,6 @@ import { useCart } from "../../context/CartContext";
 const CartSummary = () => {
   const { cartItems } = useCart();
 
-  // Tính tổng tiền từ mảng cartItems
   const totalPrice = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0

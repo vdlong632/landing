@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 interface ProductListProps {
   limit?: number;
-  // showTitle?: boolean;
   showMore?: boolean;
 }
 

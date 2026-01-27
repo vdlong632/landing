@@ -1,4 +1,7 @@
-.product-detail-page {
+.product-detail-container {
+    display: flex;
+    flex-direction: column;
+    .product-detail-page {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -28,4 +31,5 @@
             }
         }
     }
+}
 }

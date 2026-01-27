@@ -7,6 +7,8 @@
 @import "../component/products/item/ProductCart.scss";
 @import "../component/products/ProductList.scss";
 @import "../component/drawer/MobileDrawer.scss";
+@import "../component/pageheader/PageHeader.scss";
+@import "../component/service/Service.scss";
 
 //modal
 @import "../component/modal/component/CartItemList.scss";
@@ -39,3 +41,10 @@
 
 //productdetail
 @import "../pages/productdetail/ProductDetail.scss";
+@import "../pages/productdetail/component/RelatedProduct.scss";
+
+//page cart
+@import "../pages/cart/Cart.scss";
+
+//page contact
+@import "../pages/contact/Contact.scss";

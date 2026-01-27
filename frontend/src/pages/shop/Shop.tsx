@@ -1,5 +1,6 @@
 import PageHeader from "../../component/pageheader/PageHeader";
 import ProductList from "../../component/products/ProductList";
+import Service from "../../component/service/Service";
 import FilterProduct from "./component/FilterProduct";
 
 const Shop = () => {
@@ -14,6 +15,7 @@ const Shop = () => {
       />
       <FilterProduct/>
       <ProductList limit={16} showMore={false} />
+      <Service/>
     </div>
   );
 };

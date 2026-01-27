@@ -1,7 +1,15 @@
+import PageHeader from "../../component/pageheader/PageHeader"
+
 const Comparison = () => {
     return(
         <div className="comparison">
-            <h1>Comparison</h1>
+            <PageHeader
+        title="Product Comparison"
+        breadcrumb={[
+          { label: "Home", path: "/" },
+          { label: "Comparison", path: "/comparison" },
+        ]}
+        />
         </div>
     )
 }
