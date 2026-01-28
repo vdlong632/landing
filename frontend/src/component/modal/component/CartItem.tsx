@@ -41,7 +41,7 @@ const CartItem = ({
               <span className="item-price">
                 Rs. {item.price.toLocaleString()}
               </span>{" "}
-              <span className="item-quantity">{item.quantity} </span>{" "}
+              <span className="item-quantity">{item.quantity}</span>{" "}
             </>
           )}
           {showSubtotal && (

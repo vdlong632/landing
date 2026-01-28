@@ -24,7 +24,6 @@ const WishItem = ({ item }: WishListItemProps) => {
       <div className="item-info">
         <span className="item-name">{item.name}</span>
         <div className="item-meta">
-          <span className="item-quantity">{item.quantity} x</span>
           <span className="item-price">Rs. {item.price.toLocaleString()}</span>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Product } from "../../types/product";
 import { useCart } from "../../component/context/CartContext";
 import CartSummary from "../../component/modal/component/CartSummary";
 import CartItem from "../../component/modal/component/CartItem";
+import { Link } from "react-router-dom";
 const Cart = () => {
   const { cartItems } = useCart();
   return (
@@ -31,6 +32,7 @@ const Cart = () => {
         <div className="cart-total">
           <h3>Cart Totals</h3>
           <CartSummary />
+          <Link to="/checkout"><button>Checkout</button></Link>
         </div>
       </div>
     </div>

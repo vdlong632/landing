@@ -1,4 +1,6 @@
 import PageHeader from "../../component/pageheader/PageHeader";
+import BillingForm from "./component/BillingForm";
+import PlaceOrder from "./component/PlaceOrder";
 
 const Checkout = () => {
   return (
@@ -10,7 +12,10 @@ const Checkout = () => {
           { label: "Checkout", path: "/checkout" },
         ]}
       />
-      <div></div>
+      <div className="checkout-container">
+        <BillingForm/>
+        <PlaceOrder/>
+      </div>
     </div>
   );
 };

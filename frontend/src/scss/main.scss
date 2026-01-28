@@ -48,3 +48,8 @@
 
 //page contact
 @import "../pages/contact/Contact.scss";
+
+//page checkout
+@import "../pages/checkout/Checkout.scss";
+@import "../pages/checkout/component/BillingForm.scss";
+@import "../pages/checkout/component/PlaceOrder.scss";

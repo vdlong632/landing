@@ -1,3 +1,5 @@
+import WishList from "./component/WishList";
+
 interface ListCartProps {
   onClose: () => void;
 }
@@ -11,6 +13,7 @@ const LikeModal: React.FC<ListCartProps> = ({ onClose })  => {
             x
           </button>
         </div>
+        <WishList/>
       </div>
     </div>
     )

@@ -21,11 +21,13 @@ export const WishlistProvider = ({ children }: { children: ReactNode }) => {
     setWishlistItems((prev) =>
       prev.some((item) => item.id === product.id) ? prev : [...prev, product],
     );
+    console.log("Đã thêm vào Wishlist")
   };
 
   // Xóa sản phẩm theo id
   const removeFromWishlist = (productId: number) => {
     setWishlistItems((prev) => prev.filter((item) => item.id !== productId));
+    console.log("Đã xóa khỏi Wishlist")
   };
 
   // Toggle: nếu có thì xóa, nếu chưa có thì thêm
