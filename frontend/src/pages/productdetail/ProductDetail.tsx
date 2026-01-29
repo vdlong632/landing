@@ -56,9 +56,9 @@ const ProductDetail = () => {
           </div>
         </div>
         <div className="product-info">
-          <h1>{product.name}</h1>
-          <p>Rs. {product.price.toLocaleString()}</p>
-          <p>{product.description}</p>
+          <p style={{fontSize: "35px", margin: "0.5em 0"}}>{product.name}</p>
+          <p style={{margin: "0", color: "rgba(159, 159, 159, 1)", fontSize: "20px"}}>Rs. {product.price.toLocaleString()}</p>
+          <p style={{maxWidth: "65%"}}>{product.description}</p>
           <div className="size-selector">
             <p>Size</p>
             {Array.isArray(product.sizes) &&

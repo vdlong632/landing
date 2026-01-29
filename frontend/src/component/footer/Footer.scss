@@ -92,6 +92,9 @@
     }
 
     .footer-newsletter {
+      span {
+        margin-bottom: 1.8em;
+      }
       @media (max-width: 768px){
         display: flex;
         flex-direction: row;

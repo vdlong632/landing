@@ -12,6 +12,7 @@ import ProductDetail from "../pages/productdetail/ProductDetail";
 import Cart from "../pages/cart/Cart";
 import Checkout from "../pages/checkout/Checkout";
 import Comparison from "../pages/comparison/Comparison";
+import BlogDetail from "../pages/blogdetail/BlogDetail";
 
 export default function AppRoutes() {
   return (
@@ -28,7 +29,7 @@ export default function AppRoutes() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/comparison" element={<Comparison />} />
         <Route path="/product/:slug" element={<ProductDetail />} />
-        
+        <Route path="/blog/:slug" element={<BlogDetail />} />
       </Route>
 
       {/* Trang lỗi */}
