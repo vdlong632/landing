@@ -14,10 +14,6 @@
       object-fit: cover;
     }
 
-    .product-info {
-      padding: 16px;
-    }
-
     .product-badges {
       position: absolute;
       z-index: 1;
@@ -45,6 +41,27 @@
       }
     }
   }
+  .product-info {
+    padding: 0 0 1em 1em;
+    .subtitle {
+      color: rgba(137, 137, 137, 1);
+    }
+    .price-box {
+      display: flex;
+      gap: 1em;
+      .current-price {
+        font-size: $body1;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .old-price {
+        text-decoration: line-through;
+        font-size: $h6;
+        color: rgba(176, 176, 176, 1);
+        font-size: 15px;
+      }
+    }
+  }
 
   /* Overlay bao phủ toàn bộ diện tích của .product-item */
   .product-overlay {
@@ -52,7 +69,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0; 
+    bottom: 0;
     background-color: rgba(58, 58, 58, 0.7);
     display: flex;
     flex-direction: column;
@@ -82,7 +99,7 @@
         cursor: pointer;
 
         .liked {
-          background: red
+          background: red;
         }
       }
     }
@@ -92,26 +109,4 @@
 .product-item:hover .product-overlay {
   opacity: 1;
   visibility: visible;
-}
-
-.product-info {
-  padding: 0 0 1em 1em;
-  .subtitle {
-    color: rgba(137, 137, 137, 1);
-  }
-  .price-box {
-    display: flex;
-    gap: 1em;
-    .current-price {
-      font-size: $body1;
-      font-weight: 600;
-      font-size: 18px
-    }
-    .old-price {
-      text-decoration: line-through;
-      font-size: $h6;
-      color: rgba(176, 176, 176, 1);
-      font-size: 15px
-    }
-  }
 }
