@@ -42,17 +42,37 @@
     }
   }
   .product-info {
-    padding: 0 0 1em 1em;
+    padding: 0 0 1em 0.5em;
+    h3 {
+      // padding-bottom: 22px;
+      box-sizing: border-box;
+      margin-bottom: 0;
+      font-size: 22px;
+
+      @media (max-width: 768px){
+        font-size: 19px
+      }
+      @media (max-width: 425px){
+        // padding-bottom: 22px;
+        box-sizing: border-box;
+      }
+    }
     .subtitle {
       color: rgba(137, 137, 137, 1);
+      // padding-bottom: 18px;
     }
     .price-box {
       display: flex;
-      gap: 1em;
+      gap: 0.6em;
+      flex-direction: column;
       .current-price {
         font-size: $body1;
         font-weight: 600;
         font-size: 18px;
+
+        @media (max-width: 768px){
+          font-size: 17px;
+        }
       }
       .old-price {
         text-decoration: line-through;

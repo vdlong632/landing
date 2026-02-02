@@ -24,4 +24,16 @@
 .header-content {
   position: relative;
   z-index: 2;
+
+  .breadcrumb {
+    span {
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 20px
+      }
+    }
+  }
 }
+

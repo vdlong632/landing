@@ -10,6 +10,7 @@ const Comparison = () => {
           { label: "Comparison", path: "/comparison" },
         ]}
         />
+        <></>
         </div>
     )
 }

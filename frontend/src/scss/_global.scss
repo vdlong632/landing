@@ -1,6 +1,13 @@
 
 html::-webkit-scrollbar {
   display: none;
+
+//   @media (max-width: 768px){
+//   display: none;
+//   }
+//   @media (max-width: 425px){
+//   display: none;
+//   }
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -10,7 +17,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     position: relative;
-    // overflow: hidden;
 }
 .container {
   max-width: 100%;

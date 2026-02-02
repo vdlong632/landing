@@ -30,6 +30,11 @@
           height: 450px;
         }
       }
+
+      @media (max-width: 425px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
     }
 
     @media (max-width: 768px) {
@@ -45,11 +50,11 @@
           }
         }
         .main-image {
-        img {
-          width: 450px;
-          height: 500px;
+          img {
+            width: 450px;
+            height: 500px;
+          }
         }
-      }
       }
     }
   }
